@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import backgroundImageOne from '../../money-heist-ending.webp'
-import backgroundImageTwo from '../../la casa de papel.jpg'
-import backgroundImageThree from '../../Обои «Бумажный дом» на телефон 🖤❤️ _ La Casa de Papel _ Эстетика сериала.jpg'
 
-const backgroundImages = [backgroundImageOne, backgroundImageTwo, backgroundImageThree]
+const backgroundImages = [
+  '/money-heist-ending.webp',
+  '/la casa de papel.jpg',
+  '/Обои «Бумажный дом» на телефон 🖤❤️ _ La Casa de Papel _ Эстетика сериала.jpg',
+].map((imagePath) => encodeURI(imagePath))
 const backgroundIntervalMs = 8000
 
 export default function Background() {
